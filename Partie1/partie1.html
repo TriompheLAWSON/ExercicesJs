@@ -1,0 +1,24 @@
+<html>
+  <head><title>Programme In4</title><head>
+  <script language="JavaScript"> 
+    function Preferer(x)
+    { switch(x) 
+         {  case 1 : alert('Votre choix : '+'classique');break; 
+            case 2 : alert('Votre choix : '+'jazz');     break; 
+            case 3 : alert('Votre choix : '+'rock');     break; 
+            case 4 : alert('Votre choix : '+'pop');      break; 
+         }; 
+    };
+  </script>
+  </head>
+  <body>  
+    <form name="musique">
+    <select name="choix" onChange="Preferer(document.musique.choix.selectedIndex)">
+    <option value = "choix">choisissez :
+    <option value = "classique">classique
+    <option value = "jazz">jazz
+    <option value = "rock">rock
+    <option value = "pop ">pop
+    </select></form>
+  </body>
+</html>
